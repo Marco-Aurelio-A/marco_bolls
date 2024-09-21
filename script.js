@@ -16,7 +16,10 @@ let colorCountBlue = 0;
 let escolherCor = ['red', 'green', 'blue'];
 
 let angle = 0;
-let tamanho = 500;
+let tamanho = window.innerWidth/3;
+
+bola.style.height = tamanho;
+bola.style.width = tamanho;
 
 //#region
 
