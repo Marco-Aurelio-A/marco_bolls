@@ -16,6 +16,7 @@ let colorCountBlue = 0;
 let escolherCor = ['red', 'green', 'blue'];
 
 let angle = 0;
+let tamanho = 200;
 
 //#region
 
@@ -75,10 +76,10 @@ function mover()
         Dir();
     }
 
-    if(vspd >= window.innerHeight - 100)
+    if(vspd >= window.innerHeight - tamanho)
     {
         Hdir = -1;
-        vspd = window.innerHeight - 100;
+        vspd = window.innerHeight - tamanho;
         Dir();
     }
 
@@ -90,10 +91,10 @@ function mover()
         Dir();
     }
 
-    if(hspd >= window.innerWidth - 100)
+    if(hspd >= window.innerWidth - tamanho)
     {
         Wdir = -1;
-        hspd = window.innerWidth - 100;
+        hspd = window.innerWidth - tamanho;
         Dir();
     }
 
